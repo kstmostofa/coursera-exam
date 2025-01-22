@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 10px;
+    background-color: #999999;
+    color: black;
+
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    right: 20px;
+    top: 20px;
+    width: fit-content;
+    padding-inline: 30px;
+    padding-block: 5px;
+    margin: 0 0 20px auto;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+
+.chicken {
+    background-color: #D59898;
+    color: black;
+}
+
+.beef {
+    background-color: #C14543;
+    color: white;
+}
+
+.sushi {
+    background-color: #E5D198;
+    color: black;
+}
+
+.card-body {
+    padding-inline: 20px;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+    .card {
+        width: calc(33.333% - 40px);
+    }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card {
+        width: calc(50% - 40px);
+    }
+
+    .card:last-child {
+        width: calc(100% - 40px);
+        order: 3;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .card {
+        width: calc(100% - 40px);
+    }
+}
